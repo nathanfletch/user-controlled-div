@@ -1,0 +1,48 @@
+.grid-parent {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-auto-rows: repeat(3, 1fr); */
+  grid-template-areas:
+    "tl t tr"
+    "l tar r"
+    "bl b br";
+}
+
+.grid-child {
+  background-color: #fff;
+  box-sizing: border-box;
+  border: solid 2px blue;
+  padding: 10px;
+
+}
+
+#top-left {
+  grid-area: tl;
+}
+#top {
+  grid-area: t;
+}
+#top-right {
+  grid-area: tr;
+}
+#left {
+  grid-area: l;
+}
+#target {
+  grid-area: tar;
+  background-color: coral;
+}
+#right {
+  grid-area: r;
+}
+#bot-left {
+  grid-area: bl;
+}
+#bot {
+  grid-area: b;
+}
+#bot-right {
+  grid-area: br;
+}
