@@ -17,5 +17,9 @@ $(document).ready(function () {
     console.log(hue);
     $('#target').css("filter", `hue-rotate(${hue}deg)`);
   })
-
+  
+  $('#uhoh').click(function () {
+    $('#target').addClass('transform');
+    // $('#target').removeClass('transform');
+  })
 });
